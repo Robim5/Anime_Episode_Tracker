@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime ep tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div id="overlay"></div>
+    <h1>Anime Episode Tracker</h1>
+    <div class="category">
+        <h2 id="all">ALL</h2>
+        <h2 id="watching">WATCHING</h2>
+        <h2 id="completed">COMPLETED</h2>
+        <h2 id="onhold">ON HOLD</h2>
+        <h2 id="dropped">DROPPED</h2>
+        <h2 id="plantowatch">PLAN TO WATCH</h2>
+    </div>
+    <!--the anime will me add here-->
+    <div class="animetable">
+        <!--example (not code) ((will add with javascrit)) 
+        <div class="animestats">
+            <img src="..." alt="...">
+            <h2> ...(nome)..</h2>
+            <p>...(ep watch)... / ...(how many ep have)...</p>
+            <p> ...(rate).../10 <i class='bx bxs-star-half' ></i></p>
+            <div class="options" >
+                <div id="edit"><i class='bx bx-edit-alt' ></i></div>
+                <div id="delete"><i class='bx bx-trash' ></i></div>
+            </div>
+        </div>
+       -->
+    </div>
+    <button id="addanime"><i class='bx bx-add-to-queue'></i>Add Anime</button>
+    <div class="addWindow">
+        <form class="addform">
+            <input id="imageadd" type="file" accept="image/*"  aria-label="Select anime cover image">
+            <input id="nameadd" type="text" placeholder="Name">
+            <input id="epadd" type="number" placeholder="Episode">
+            <input id="totaladd" type="number" placeholder="Total eps">
+            <input id="rateadd" type="number" placeholder="New Rate (0-10)">
+            <select name="status" id="statusadd" title="Select anime status">
+                <option value="watching">Watching</option>
+                <option value="completed">Completed</option>
+                <option value="onhold">On Hold</option>
+                <option value="dropped">Dropped</option>
+                <option value="plantowatch">Plan to Watch</option>
+                </select>
+            <button id="saveadd" type="submit"><i class='bx bx-save' ></i>Save</button>
+            <button id="canceladd" type="button"><i class='bx bx-x' ></i>Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

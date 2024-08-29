@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+    background-color: #181818;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1;
+}
+
+ /* Category Styles */
+ .category {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.category h2 {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    color: #bbb;
+}
+
+.category h2:hover {
+    background-color: #333;
+    border-color: #444;
+    color: #fff;
+}
+
+/* Background Color Classes with Higher Specificity */
+.category h2.purple {
+    background: linear-gradient(to bottom, rgba(200, 0, 255, 0.8), rgba(75, 0, 130, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+.category h2.green {
+    background: linear-gradient(to bottom, rgba(15, 202, 8, 0.8), rgba(1, 72, 18, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+.category h2.blue {
+    background: linear-gradient(to bottom, rgba(15, 10, 255, 0.8), rgba(4, 10, 76, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+.category h2.yellow {
+    background: linear-gradient(to bottom, rgba(189, 223, 19, 0.8), rgba(116, 120, 7, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+.category h2.red {
+    background: linear-gradient(to bottom, rgba(252, 20, 20, 0.8), rgba(112, 11, 11, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+.category h2.orange {
+    background: linear-gradient(to bottom, rgba(205, 130, 17, 0.8), rgba(113, 67, 6, 0.8));
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* Anime Table Styles */
+.animetable {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two columns layout */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 10%;
+    height: 55vh;
+    overflow-y: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #202020;
+}
+
+/* Anime Stats Styles */
+.animestats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 250px; /* Constrain each anime block size */
+    margin: auto;
+}
+
+.animestats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.animestats img {
+    width: 100px;
+    height: 140px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.animestats h2 {
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.animestats p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.animestats .options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.animestats .options div {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.animestats .options div:hover {
+    background-color: #444;
+}
+
+/* Button Styles */
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #3a3a3a;
+}
+
+#addanime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add/Edit Window Styles */
+.addWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 2;
+}
+
+.addform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="file"], input[type="number"], input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+#saveadd {
+    background-color: #28a745;
+}
+
+#canceladd {
+    background-color: #dc3545;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .animetable {
+        grid-template-columns: 1fr; /* Switch to single column on smaller screens */
+        height: 50vh;
+    }
+
+    .animestats {
+        width: 90%;
+    }
+}
+
+

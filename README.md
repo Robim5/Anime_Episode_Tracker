@@ -11,7 +11,7 @@ This Anime Episode Tracker is a web application designed to help you manage your
 
 ## Demo 🖥️
 
-Check out the live version of the app here: [Anime Tracker]([https://66d04d6bfc253de78843fecf--ornate-cucurucho-d792f6.netlify.app])
+Check out the live version of the app here: [Anime Tracker](https://66d04d6bfc253de78843fecf--ornate-cucurucho-d792f6.netlify.app)
 
 ## Screenshots 📸
 
